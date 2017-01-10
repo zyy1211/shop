@@ -1,0 +1,214 @@
+.home .home-bar{
+    background-color: #f9fdfd;
+}
+/*home顶部*/
+.home-tabImg{
+    width: 18vw;
+
+}
+.home-tabput{
+    height: 3rem;
+    border: 0.1rem solid gray;
+    width:60vw;
+    border-radius: 1.7rem/1.7rem;
+    margin:.2rem 0 0 1rem;
+    display: flex;
+    flex-flow: row nowrap;
+    position: relative;
+}
+.home-tabput input{
+    height: 2.8rem;
+    line-height: 2.8rem;
+    padding: 0;
+    margin-left:2rem;
+    background-color: #f9fdfd;
+}
+.home-tabput i{
+    font-size: 7vw;
+    line-height: 2.5rem;
+    position: absolute;
+    right: .8rem;
+}
+.home .IconRow{
+    width: 3rem;
+    height: 2rem;
+    margin-top: .8rem;
+    position: absolute;
+    right: 1rem;
+}
+/*列表*/
+.home .content{
+    background-color:rgb(238,238,238) ;
+
+}
+.home .content .text{
+    text-align: center;
+}
+.home .content .text img{
+    width: 50vw;
+    height: 2rem;
+}
+.home .content .list{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 0 2vw;
+}
+.home .content .listLeft{
+    width: 47vw;
+    margin-bottom: 1rem;
+}
+
+/*商品单品*/
+.home .content .commodity{
+    width: 100%;
+    height: 16rem;
+    margin-top: .6rem;
+}
+.home .content .commImgBox{
+    background-color: rgb(185,184,184);
+    display: flex;
+    justify-content: center;
+    /*flex-grow: 1;*/
+}
+.home .content .list .commImg{
+   width: 12rem;
+    height: 9rem;
+}
+.home .content .list .commDetails{
+    background-color: white;
+    height: 7.2rem;
+}
+.home .content .list .commDetail{
+    width: 90%;
+    margin:0 5%;
+    height: 4rem;
+    line-height: 2rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+/*购物车*/
+.home .content .list .shopCart{
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-right: 5%;
+}
+/*价格*/
+.home .content .list .price{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.5rem 0 0 5%;
+}
+
+.home .content .list .price span{
+    color: red;
+    font-size: 1.8rem;
+}
+.home .content .list .price del{
+    color: gray;
+    font-size: 1.6rem;
+    margin: 0 .5rem;
+}
+
+/*模态*/
+.homeModalView{
+    min-height: 0;
+    border: 1px solid red;
+    background-color: white;
+    position: absolute;
+    top: auto;
+    bottom: 0;
+}
+.modal-backdrop-bg{
+    background-color: black;
+    opacity: .6;
+
+}
+.homeModalView .home-model{
+    display: flex;
+    flex-flow: row nowrap;
+    margin-left: 1.5rem;
+    height: 8rem;
+    margin-top: 1rem;
+    /*border: 1px solid blue;*/
+}
+.homeModalView .modal-img img{
+    width: 12rem;
+    height: 8rem;
+}
+.homeModalView .modal-img{
+    width: 12rem;
+    height: 8rem;
+}
+/*价格*/
+.homeModalView .goods-price{
+    display: flex;
+    flex-flow: column nowrap;
+    margin-left: .3rem;
+}
+.homeModalView .home-model .goods-price>span{
+    /*color: red;*/
+    font-size: 1.5rem;
+    width: 100%;
+    white-space: normal;
+}
+.homeModalView .home-model .goods-num{
+    display: flex;
+    flex-flow: column nowrap;
+}
+.homeModalView .home-model .goods-num span:nth-of-type(1){
+    color: red;
+    font-size: 2rem;
+    margin: .3rem 0;
+}
+.homeModalView .home-model .goods-num span:nth-of-type(2){
+    color: gray;
+}
+
+/*商品数量*/
+.homeModalView .goodsShop{
+    width: 100vw;
+    border-top: 1px solid gray;
+    margin-top: .8rem;
+    padding-top: .8rem;
+}
+
+
+.homeModalView .modal-btn{
+    display: flex;
+    flex-flow: row nowrap;
+}
+.homeModalView .modal-btn button{
+   min-width: 50vw;
+}
+.homeModalView .modal-btn .button.button-balanced{
+    background-color: pink;
+}
+
+/*添加*/
+.addGoods{
+    height: 3.5rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin: 0 1rem;
+    align-items: center;
+}
+.homeModalView .addGoods div{
+    display: flex;
+    flex-flow: row nowrap;
+}
+.homeModalView .addGoods span{
+    font-size: 1.8rem;
+}
+.homeModalView .addGoods img{
+    width: 4rem;
+    height: 2.5rem;
+}
+.homeModalView .addGoods input{
+    width: 4rem;
+    text-align: center;
+}

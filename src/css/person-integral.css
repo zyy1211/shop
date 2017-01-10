@@ -1,0 +1,55 @@
+.queryItg{
+    background-color: #eee;
+}
+.queryItg .totalItg{
+    width: 100vw;
+    height: 6rem;
+    background-color: white;
+    align-items: center;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    color: #EB3847;
+    font-weight: 900;
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    padding: 0 1rem;
+    word-spacing: .2rem;
+}
+.queryItg .totalItg>div{
+    border: 1px solid #EB3847;
+    height: 2.5rem;
+    width: 5rem;
+    text-align: center;
+    line-height: 2.5rem;
+}
+.queryItg .itgList{
+    background-color: white;
+}
+.queryItg .itgList>div{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;
+    border-bottom: .1rem solid #e6e6e6;
+    padding: 0 1rem;
+}
+.queryItg .itgList>div>div{
+    display: flex;
+    flex-flow: column nowrap;
+}
+.queryItg .itgList .text{
+    color: #646464;
+    font-family: '微软雅黑';
+}
+.queryItg .itgList .date{
+    font-size: 1.2rem;
+    color: #9e9e9e;
+}
+.queryItg .min{
+    color: #EB3847;
+    align-self: flex-start;
+    font-weight: 600;
+    margin-top: .3rem;
+}

@@ -1,0 +1,34 @@
+<ion-modal-view class="adsModal">
+    <div class="msg">
+        <div class="title">
+            <span>新增收货地址</span>
+            <span ng-click="address.removeModal()" class="x">×</span>
+        </div>
+        <div class="adsList">
+            <div>
+                <div class="det">收货人</div>
+                <input class="sele name" placeholder="姓名">
+            </div>
+            <div>
+                <div class="det">联系电话</div>
+                <input class="sele tel" placeholder="手机或固定电话">
+            </div>
+            <div>
+                <div class="det">选择地区</div>
+                <div class="sele">
+                    <input class="pro-selet" ng-click="address.area()" readonly value="河南省" placeholder="">
+                    <input ng-click="address.area1()" readonly value="郑州市" placeholder="">
+                </div>
+            </div>
+            <div>
+                <div class="det ">详细地址</div>
+                <input class="sele adsDetail" placeholder="街道门牌,无需重复地区信息">
+            </div>
+            <div>
+                <div class="det">邮政编码</div>
+                <input class="sele code" placeholder="邮政编码(选填)">
+            </div>
+        </div>
+    </div>
+    <button ng-click="address.saveAds(list)" class="btn">保 存</button>
+</ion-modal-view>

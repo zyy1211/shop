@@ -1,0 +1,16 @@
+<ion-modal-view class="city-modal">
+    <div class="box">
+        <div class="first">{{address.zyy.pro}}</div>
+
+        <div class="secondBox">
+            <ion-scroll class="scroll">
+                <div>
+                    <div ng-click="address.change($index)"  class="second" ng-repeat="pros in address.zyy.divide">
+                        <div class="point"></div>
+                        <div class="provid">{{pros+'省'}}</div>
+                    </div>
+                </div>
+            </ion-scroll>
+        </div>
+    </div>
+</ion-modal-view>

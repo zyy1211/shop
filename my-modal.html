@@ -1,0 +1,33 @@
+<ion-modal-view class="homeModalView">
+    <div class="home-model">
+        <div  class="modal-img">
+            <img src="images/testImg.png">
+        </div>
+        <!--商品价格-->
+        <div class="goods-price">
+            <span>阳澄湖大闸蟹阳澄湖大闸蟹阳澄湖大闸蟹阳澄湖大闸蟹</span>
+            <div class="goods-num">
+                <span>¥128/件</span>
+                <span>库存800件</span>
+            </div>
+        </div>
+    </div>
+    <div class="goodsShop">
+        <div class="addGoods">
+            <span>数量</span>
+            <div>
+
+                <img ng-click="home.changeNum('reduce') ||homeDetail.changeNum('reduce')" src="images/shoppingReduce.png">
+                <input value="{{home.goodsNum || homeDetail.goodsNum}}">
+                <img ng-click="home.changeNum('add') ||homeDetail.changeNum('add')" src="images/shoppingAdd.png">
+
+            </div>
+
+        </div>
+        <div class="modal-btn">
+            <button ng-click="homeDetail.goodsAddNum()" class="button button-balanced">加入购物车</button>
+            <button class="button button-assertive">立即购买</button>
+        </div>
+    </div>
+
+</ion-modal-view>

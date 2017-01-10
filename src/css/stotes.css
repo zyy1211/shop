@@ -1,0 +1,58 @@
+.stores{
+    background-color: #eee;
+}
+
+/*地址定位*/
+.stores .locate{
+    height: 3rem;
+    width: 100vw;
+    background-color: antiquewhite;
+    opacity: .8;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.stores .locate img{
+    width: 1.5rem;
+    height: 2rem;
+    margin: 0 .5rem;
+}
+/*加盟商*/
+.stores .teamWork img{
+    width: 100vw;
+    height: 18rem;
+}
+.stores .teamWork .twDetail{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    width: 100vw;
+    height: 8rem;
+    background-color: white;
+    padding: .5rem;
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+}
+.stores .teamWork .twDetail span:nth-of-type(1){
+    color: red;
+    font-size: 1.6rem;
+}
+.stores .teamWork .twDetail span{
+    font-size: 1.3rem;
+    color: gray;
+}
+
+/*!*客服*!*/
+.stores .service{
+position: absolute;
+top: 80vh;
+right: 1rem;
+}
+.stores .service img{
+width: 6rem;
+height: 6rem;
+}

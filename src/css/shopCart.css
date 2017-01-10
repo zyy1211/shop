@@ -1,0 +1,70 @@
+.shopCart{
+    background-color: #eee;
+}
+.shopCart .point.active{
+    width: 0.9rem;
+    height: 0.9rem;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background-color: #E80516;
+    box-shadow: 0 0 0 .4rem white,0 0 0 .5rem gray;
+    margin: 0 1.5rem ;
+}
+.shopCart .pointBox{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+.shopCart .point{
+    width: 0.9rem;
+    height: 0.9rem;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 0 0 0 .4rem white,0 0 0 .5rem gray;
+    margin: 0 1.5rem ;
+}
+.shopCart .all{
+    width: 100vw;
+    height: 4.5rem;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    font-size: 1.8rem;
+}
+
+/*商品*/
+
+
+.shopCart .goods{
+    height: 11rem;
+    background-color: white;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+.shopCart .goods-msg{
+    display: flex;
+    flex-flow: row nowrap;
+    /*border: 1px solid red;*/
+}
+.shopCart .goods-msg>img{
+    width: 7rem;
+    height: 8rem;
+    flex-shrink: 0;
+}
+.shopCart .goods-msg>p{
+    margin:0 2rem 0 1rem;
+}
+/*垃圾桶*/
+.shopCart .trash{
+    margin-right: 1rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+.shopCart .trash img{
+    width: 2.1rem;
+    height: 2.6rem;
+}

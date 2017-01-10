@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myapp">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+    <script src="src/lib/js/ionic.bundle.js"></script>
+    <link rel="stylesheet" type="text/css" href="src/lib/css/ionic.min.css">
+    <script src="src/js/httpFactory.js"></script>
+
+</head>
+<body ng-controller="myctr">
+<ion-content>
+    <ion-side-menus>
+        <!-- 中间内容 -->
+        <ion-side-menu-content>
+            <h1>zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz</h1>
+            <h1>zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz</h1>
+            <h1>zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz</h1>
+            <h1>zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz</h1>
+        </ion-side-menu-content>
+
+        <!-- 左侧菜单 -->
+        <ion-side-menu side="left">
+            <h1>lllllllllllllllllllll</h1>
+            <h1>lllllllllllllllllllll</h1>
+            <h1>lllllllllllllllllllll</h1>
+            <h1>lllllllllllllllllllll</h1>
+            <h1>lllllllllllllllllllll</h1>
+        </ion-side-menu>
+
+        <!-- 右侧菜单 -->
+        <ion-side-menu side="right">
+            <h1>rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr</h1>
+            <h1>rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr</h1>
+            <h1>rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr</h1>
+            <h1>rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr</h1>
+        </ion-side-menu>
+
+        <ion-side-menu-content>
+            <h1>cccccccccccccccccccccccccccccccc</h1>
+            <h1>cccccccccccccccccccccccccccccccc</h1>
+            <h1>cccccccccccccccccccccccccccccccc</h1>
+            <h1>cccccccccccccccccccccccccccccccc</h1>
+            <h1>cccccccccccccccccccccccccccccccc</h1>
+            <h1>cccccccccccccccccccccccccccccccc</h1>
+            <!-- 主要内容，通常 <ion-nav-view> -->
+        </ion-side-menu-content>
+    </ion-side-menus>
+    function ContentController($scope, $ionicSideMenuDelegate) {
+    $scope.toggleLeft = function() {
+
+    };
+    }
+
+</ion-content>
+</body>
+</html>
+<script>
+    angular.module('myapp',['ionic','App.httpFactory']).controller('myctr',['$scope','$http','HttpFactory','$ionicSideMenuDelegate',function ($scope,$http,HttpFactory,$ionicSideMenuDelegate) {
+
+        $ionicSideMenuDelegate.toggleLeft();
+    }])
+</script>

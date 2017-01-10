@@ -1,0 +1,113 @@
+.integral .integral-bar{
+    background-color: #f9fdfd;
+}
+/*integral顶部*/
+.integral-tabImg{
+    width: 18vw;
+}
+.integral-tabput{
+    height: 3rem;
+    border: 0.1rem solid gray;
+    width:60vw;
+    border-radius: 1.7rem/1.7rem;
+    margin:.2rem 0 0 1rem;
+    display: flex;
+    flex-flow: row nowrap;
+    position: relative;
+}
+.integral-tabput input{
+    height: 2.8rem;
+    line-height: 2.8rem;
+    padding: 0;
+    margin-left:2rem;
+    background-color: #f9fdfd;
+}
+.integral-tabput i{
+    font-size: 7vw;
+    line-height: 2.5rem;
+    position: absolute;
+    right: .8rem;
+}
+.integral .IconRow{
+    width: 3rem;
+    height: 2rem;
+    margin-top: .8rem;
+    position: absolute;
+    right: 1rem;
+}
+/*列表*/
+.integral .content{
+    background-color:rgb(238,238,238) ;
+
+}
+.integral .content .text{
+    text-align: center;
+}
+.integral .content .text img{
+    width: 50vw;
+    height: 2rem;
+}
+.integral .content .list{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 0 2vw;
+}
+.integral .content .listLeft{
+    width: 47vw;
+    margin-bottom: 1rem;
+}
+
+/*商品单品*/
+.integral .content .commodity{
+    width: 100%;
+    height: 16rem;
+    margin-top: .6rem;
+}
+.integral .content .commImgBox{
+    background-color: rgb(185,184,184);
+    display: flex;
+    justify-content: center;
+}
+.integral .content .list .commImg{
+    width: 12rem;
+    height: 9rem;
+}
+.integral .content .list .commDetails{
+    background-color: white;
+    height: 7.2rem;
+}
+.integral .content .list .commDetail{
+    width: 90%;
+    margin:0 5%;
+    height: 4rem;
+    line-height: 2rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+/*积分*/
+.integral .content .list .shopCart{
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-right: 5%;
+}
+/*价格*/
+.integral .content .list .price{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.5rem 0 0 5%;
+}
+
+.integral .content .list .price span{
+    color: red;
+    font-size: 1.3rem;
+    font-weight: 900;
+}
+.integral .content .list .price del{
+    color: gray;
+    font-size: 1.6rem;
+    margin: 0 .5rem;
+}

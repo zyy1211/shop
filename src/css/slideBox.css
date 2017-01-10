@@ -1,0 +1,25 @@
+@media all and (max-width: 480px){
+
+    .topCarouselImg{
+        height: 15rem;
+        width: 100vw;
+    }
+}
+@media all and (min-width: 480px) {
+    .topCarouselImg {
+        height: 18rem;
+        width: 100vw;
+    }
+}
+.slider-pager{
+    text-align: left;
+    margin-left: 10vw;
+}
+.slider-pager .slider-pager-page.active{
+     color: red;
+    opacity: 1;
+ }
+.slider-pager .slider-pager-page{
+    color: white;
+    opacity: 1;
+}

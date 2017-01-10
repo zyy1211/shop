@@ -23,7 +23,7 @@ http.createServer(function(req, res) {
             if (qs_parse.callback){
                 str =  qs_parse.callback + '(' + JSON.stringify(resultData) + ')';//jsonp
             }else {
-                str = JSON.stringify(resultData);
+                str = resultData;
             }
             res.writeHead(200, {'Content-Type': 'application/json;charset=utf-8'});
             res.end(str);

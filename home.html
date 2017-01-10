@@ -1,3 +1,44 @@
-<ion-view title="home">
-     <h1>home</h1>
+
+<ion-view title="home" class="home">
+     <ion-header-bar class="home-bar">
+          <img class="home-tabImg" src="images/logo.png">
+          <div class="home-tabput">
+               <input type="search" placeholder="例:大闸蟹">
+               <i class=" icon ion-ios-search-strong placeholder-icon"></i>
+          </div>
+          <!--<button ng-click="home.toggleRight()" class="button button-icon ion-navicon-round pull-right"></button>-->
+         <img ng-click="home.toggleRight()" class="IconRow" src="images/sidelist.png">
+     </ion-header-bar>
+    <ion-content>
+        <mg-slide-box source-array="home.autoImg"></mg-slide-box>
+        <div class="content">
+            <div class="text">
+                <img src="images/Recommend.png">
+            </div>
+            <div class="list">
+                <!--商品列表详情-->
+                <div ng-click="home.openDetail()" class="listLeft" ng-repeat="goods in home.goods">
+                    <div class="commodity">
+                        <div class="commImgBox">
+                            <img class="commImg" ng-src="{{'http://114.112.94.166'+goods.goods_introduction}}">
+                        </div>
+                        <div class="commDetails">
+                            <p class="commDetail">{{goods.goods_name}}</p>
+                            <div class="price">
+                                <div>
+                                    <span>¥48</span>
+                                    <del>{{goods.market_price}}</del>
+                                </div>
+
+                                <img ng-if="!empty" ng-click="home.addComm($event)" class="shopCart" src="images/shopIcon.png">
+                                <img ng-if="empty" class="shopCart" src="images/sellout.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--详情结束-->
+            </div>
+        </div>
+    </ion-content>
+
 </ion-view>

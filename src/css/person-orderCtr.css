@@ -1,0 +1,196 @@
+.myorder{
+    background-color: #eee;
+}
+.myorder .heard{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    height: 4rem;
+    width: 100vw;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+
+}
+.myorder .heard h5{
+    width: 20vw;
+    border-right: 1px solid #e6e6e6;
+    height: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    position: relative;
+}
+.myorder .heard h5.active{
+    color: red;
+}
+.myorder .heard h5.active::after{
+    position: absolute;
+    content: '';
+    bottom: -0.5rem;
+    width: 80%;
+    height: .2rem;
+    left: 10%;
+    background-color: red;
+}
+.myorder .orderCt{
+    margin-top: 4.5rem;
+}
+
+/*商品列表*/
+.myorder .classify{
+    margin-bottom: 1rem;
+}
+/*订单编号行*/
+.myorder .first{
+   line-height: 3.5rem;
+    height: 3.5rem;
+    background-color: white;
+    position: relative;
+}
+.myorder .first span{
+    margin: 0 1rem;
+}
+.myorder .first .orState{
+    position: absolute;
+    right: 0;
+    color: red;
+}
+/*图片行*/
+.myorder .second .goodsList{
+    display: flex;
+    flex-flow: row nowrap;
+    height: 10.5rem;
+    padding: .75rem 1rem .75rem;
+    border-bottom: 1rem solid white;
+}
+
+.myorder .second .goodImg{
+    width: 8rem;
+    height: 8rem;
+   flex-shrink: 0;
+    object-fit: contain;
+}
+.myorder .second .goodImg img{
+    width: 100%;
+    height: 100%;
+}
+.myorder .second .goodsList p{
+    margin: 0 1rem;
+}
+
+.myorder .third{
+    background-color: white;
+    margin-bottom: 1px;
+    display: flex;
+    justify-content: flex-end;
+    height: 3rem;
+    padding-right: 1rem;
+}
+.myorder .third span{
+    margin: 0 0.5rem;
+}
+.myorder .third .money{
+    word-spacing: .3rem;
+}
+.myorder .four{
+    background-color: white;
+    height: 5rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    padding-right: 1rem;
+    align-items: center;
+}
+.myorder .four div{
+    width: 8rem;
+    height: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    margin:0 .5rem;
+    border-radius: 3px;
+}
+.myorder .four .cancel,.myorder .four .refund{
+    border: .1rem solid gray;
+    color: gray;
+}
+.myorder .four .pay,.myorder .four .refund-one,.myorder .four .OK,.myorder .four .comment{
+    border: .1rem solid red;
+    color: red;
+}
+
+/*取消订单的弹窗*/
+.Order.popup-container .popup{
+    width: 30.6rem;
+    height: 17.6rem;
+    border-radius: 1rem;
+}
+.Order .popup-head{
+    height: 14rem;
+    padding: 0;
+    border-bottom: 1px solid darkgrey;
+}
+.Order .popup-title{
+    line-height: 14rem;
+
+}
+
+.Order .popup-buttons,.Order-R .popup-buttons{
+    min-height: 3.6rem;
+    padding: .3rem;
+}
+.Order .popup-buttons .button,.Order-R .popup-buttons .button{
+    min-height: 3rem;
+    height: 3rem;
+    outline: none;
+    background-color: transparent;
+    border: none;
+}
+.Order .popup-buttons .button::after,.Order-R .popup-buttons .button::after{
+    display: none;
+}
+.popup-buttons .button:last-child{
+    color: red;
+    border-left: .1rem solid darkgrey;
+}
+
+/*申请退款的弹窗*/
+.Order-R.popup-container .popup{
+    max-width: 30.6rem;
+    max-height: 17.6rem;
+    width: 30.6rem;
+    height: 17.6rem;
+    background-color: white;
+    border-radius: 1rem;
+}
+.Order-R .popup-head{
+    height: 4.3rem;
+    padding: 0;
+}
+.Order-R .popup-title{
+    line-height: 4.3rem;
+}
+.Order-R .popup-body{
+    padding: 0;
+}
+.Order-R textarea{
+    /*line-height: 9.5rem;*/
+    height: 9.5rem;
+    background-color: #eee;
+}
+.Order-R textarea::-webkit-input-placeholder{
+    color: #666;
+}
+
+.Order-R .number{
+    position: absolute;
+    right: 1rem;
+    bottom: 4rem;
+}
+/*.Order-R .popup-buttons .button{*/
+    /*line-height: 3rem;*/
+/*}*/
+
+
+
+

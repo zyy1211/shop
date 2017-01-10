@@ -1,0 +1,243 @@
+/*默认收货地址图标*/
+.address .imgA.active{
+   background:url("../images/address_chooseRed.png") ;
+   width: 2rem;
+   height: 2rem;
+   background-size: 100%;
+}
+.address .imgA{
+   background: url("../images/false.png");
+   width: 2rem;
+   height: 2rem;
+   background-size: 100%;
+}
+/*编辑图标*/
+.address .imgE{
+   background:url("../images/addressEdit.png") ;
+   width: 1.6rem;
+   height: 1.6rem;
+   background-size: 100%;
+}
+/*删除图标*/
+.address .imgD{
+   background:url("../images/addressDelete.png") ;
+   width: 1.1rem;
+   height: 1.6rem;
+   background-size: 100%;
+}
+
+/*列表信息*/
+.address{
+   background-color: #eee;
+}
+.address .people{
+   height: 10.7rem;
+   padding: 0 1.1rem;
+   display: flex;
+   flex-flow: column nowrap;
+   margin-bottom: 1rem;
+   background-color: white;
+}
+.address .msg{
+   display: flex;
+   flex-flow: column nowrap;
+   height: 7rem;
+   justify-content: space-between;
+}
+.address .msg .msg-name{
+   font-size: 1.5rem;
+   margin-top: 1.1rem;
+   display: flex;
+   flex-flow: row nowrap;
+   justify-content: space-between;
+}
+.address .msg .ads{
+   font-size: 1.2rem;
+   margin-bottom: 1.2rem;
+   color: #666;
+}
+.address .msg div{
+   display: flex;
+   flex-flow: row nowrap;
+}
+.address .edit{
+   display: flex;
+   flex-flow: row nowrap;
+   border-top: .2rem solid #eee;
+   justify-content: space-between;
+   height: 3.7rem;
+   align-items: center;
+}
+.address .edit>div{
+   display: flex;
+   flex-flow: row nowrap;
+}
+.address .edit .right>div{
+   display: flex;
+   flex-flow: row nowrap;
+}
+.address .edit span{
+   margin: 0 1rem;
+}
+.address .foot{
+   padding: 0;
+}
+.address  .addAds{
+   display: flex;
+   flex-flow: row nowrap;
+   justify-content: center;
+   align-items: center;
+   width: 100vw;
+   background-color: #ED3745;
+   color: white;
+   word-spacing: 1rem;
+   font-size: 1.8rem;
+}
+
+/*编辑地址的模态*/
+.adsModal .modal-backdrop-bg{
+   background-color: black;
+   opacity: .7;
+}
+.adsModal{
+   min-height: 28.9rem;
+   position: absolute;
+   top: auto;
+   bottom: 0;
+}
+.adsModal .msg{
+   height: 23.7rem;
+   /*border-bottom: .1rem solid #B9B9B9;*/
+   margin-bottom: 1.45rem;
+}
+.adsModal .title{
+   height: 4.5rem;
+   border-bottom: .1rem solid #B9B9B9;
+   font-size: 1.5rem;
+   text-align: center;
+   line-height: 4.5rem;
+}
+.adsModal .x{
+   position: absolute;
+   right: 1.5rem;
+   font-size: 2.5rem;
+   margin-top: -.2rem;
+}
+.adsModal .adsList{
+   height: 19.1rem;
+   display: flex;
+   flex-flow: column nowrap;
+}
+.adsModal .adsList>div{
+   display: flex;
+   flex-flow: row nowrap;
+   height: 3.82rem;
+   border-bottom: .1rem solid #B9B9B9;
+   align-items: center;
+   justify-content: space-between;
+}
+.adsModal .det{
+   margin: 0 2.5rem;
+   font-size: 1.3rem;
+   color: #333;
+   display: flex;
+   flex-flow: row nowrap;
+   flex-shrink: 0;
+}
+.adsModal .sele{
+   display: flex;
+   flex-flow: row nowrap;
+   margin-right: 6rem;
+}
+.adsModal .sele input{
+   width: 7rem;
+}
+.adsModal .adsList input{
+   border: none;
+}
+.adsModal .btn{
+   width: 100vw;
+   height:5.2rem;
+   background-color: #ED3745;
+   border: none;
+   color: white;
+   word-spacing: 2rem;
+   font-size: 1.8rem;
+}
+
+/*省 市的模态*/
+/*.city-modal .modal-backdrop-bg{*/
+   /*background-color: black;*/
+   /*opacity: .7;*/
+/*}*/
+.city-modal{
+   min-height: 40rem;
+   width: 70vw;
+   /*overflow: scroll;*/
+   position: absolute;
+   left: 15vw;
+   top: auto;
+   bottom: 20vh;
+}
+.city-modal .box{
+   height: 40rem;
+   /*overflow: scroll;*/
+   font-size: 1.6rem;
+}
+.city-modal .first{
+   padding:0 2rem;
+   border-bottom: .1rem solid #666;
+   height: 4rem;
+   line-height: 4rem;
+}
+
+
+.city-modal .secondBox{
+   height: 55rem;
+}
+.scroll{
+   height: 35rem;
+}
+.city-modal .second{
+   padding: 0 2rem;
+   height: 3rem;
+   display: flex;
+   flex-flow: row nowrap;
+   align-items: center;
+   width: 100vw;
+}
+/*省市选择的圆点*/
+.city-modal .point.active{
+   width: 0.5rem;
+   height: 0.5rem;
+   flex-shrink: 0;
+   border-radius: 50%;
+   background-color: #E80516;
+   box-shadow: 0 0 0 .3rem white,0 0 0 .4rem gray;
+}
+.city-modal .point{
+   width: 0.5rem;
+   height: 0.5rem;
+   flex-shrink: 0;
+   border-radius: 50%;
+   background-color: white;
+   box-shadow: 0 0 0 .3rem white,0 0 0 .4rem gray;
+   margin-right:  1.5rem ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

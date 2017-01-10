@@ -1,0 +1,35 @@
+<ion-view class="address">
+    <ion-content>
+        <div>
+            <div class="people" ng-repeat="list in address.data track by $index">
+                <div class="msg">
+                    <div class="msg-name">
+                        <span>{{list.vname}}</span>
+                        <span>{{list.tel}}</span>
+                    </div>
+                    <div class="ads">{{list.province+'省'+list.city+'市'+list.address}}</div>
+                </div>
+                <div class="edit">
+                    <div class="left">
+                        <div ng-click="address.defaultAds($event)" class="imgA"></div>
+                        <span>默认地址</span>
+                    </div>
+
+                    <div class="right">
+                        <div ng-click="address.edit(list)">
+                            <div class="imgE"></div>
+                            <span>编辑</span>
+                        </div>
+                        <div ng-click="address.removeAds($event,$index)">
+                            <div class="imgD"></div><span>删除</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </ion-content>
+    <ion-footer-bar class="foot">
+        <div class="addAds" ng-click="address.edit()">新 增 地 址</div>
+    </ion-footer-bar>
+</ion-view>

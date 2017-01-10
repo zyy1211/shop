@@ -1,3 +1,64 @@
-<ion-view title="person">
-    <h1>person</h1>
+<ion-view title="person" class="personView">
+    <ion-content class="personBG">
+        <div class="userDetail">
+            <img src="images/4.jpg">
+            <div class="userName">
+                <h4>你有梦想吗?</h4>
+                <p>3800积分</p>
+            </div>
+        </div>
+        <div class="column-two">
+            <div ng-click="person.myOrder()" class="column-first">
+                <img src="images/order.png">
+                <span>我的订单</span>
+            </div>
+            <div class="column-sec" ng-click="person.loveGoods()">
+                <img src="images/star.png">
+                <span>我的收藏</span>
+            </div>
+        </div>
+        <div class="shopCart" ng-click="person.openCar()">
+            <div>
+                <img class="imageCar" src="images/shoppingCar.png">
+                <span>我的购物车</span>
+            </div>
+            <img class="GT" src="images/numsArrow.png">
+        </div>
+
+        <div class="row-three">
+            <div ng-click="person.openIntegral()">
+                <div>
+                    <img class="imageMark" src="images/credit.png">
+                    <span>我的积分</span>
+                </div>
+                <img class="GT" src="images/numsArrow.png">
+            </div>
+            <div ng-click="person.openAddress()">
+                <div>
+                    <img class="imageAdd" src="images/address.png">
+                    <span>收货地址</span>
+                </div>
+                <img class="GT" src="images/numsArrow.png">
+            </div>
+            <div>
+                <div>
+                    <img class="imageID" src="images/pay.png">
+                    <span>支付记录</span>
+                </div>
+
+                <img class="GT" src="images/numsArrow.png">
+            </div>
+        </div>
+        <div class="focus">
+            <div>
+                <img class="imageHeard" src="images/concern.png">
+                <span>推荐关注</span>
+            </div>
+            <div>
+                <p>推荐好友关注送积分</p>
+                <img class="GT" src="images/numsArrow.png">
+            </div>
+        </div>
+
+    </ion-content>
 </ion-view>

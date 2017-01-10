@@ -1,0 +1,100 @@
+html{
+    font-size: 62.5%;
+    -webkit-user-select: auto;
+}
+body,.scroll{
+    -webkit-user-select: auto;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.homeSelect{
+    background:url("../images/homeSelect.png") no-repeat center;
+    width: 2.2rem;
+    height: 3.5rem !important;
+    background-size: 100%;
+}
+.shomepage{
+    background: url("../images/shomepage.png") no-repeat center;
+    width: 2.2rem;
+    height: 3.5rem !important;
+    background-size: 100%;
+}
+.integStoresSelect{
+    background:url("../images/integStoresSelect.png") no-repeat center;
+    width: 2.2rem;
+    height: 3.5rem !important;
+    background-size: 100%;
+}
+.sintegStore{
+    background: url("../images/sintegStore.png") no-repeat center;
+    width: 2.2rem;
+    height: 3.5rem !important;
+    background-size: 100%;
+}
+.napaStoresSelected{
+    background:url("../images/napaStoresSelected.png") no-repeat center;
+    width: 2.2rem;
+    height: 3.5rem !important;
+    background-size: 100%;
+}
+.napaStores{
+    background: url("../images/napaStores.png") no-repeat center;
+    width: 2.2rem;
+    height: 3.5rem !important;
+    background-size: 100%;
+}
+.personSelected{
+    background:url("../images/personSelected.png") no-repeat center;
+    width: 2.2rem;
+    height: 3.5rem !important;
+    background-size: 100%;
+}
+.person{
+    background: url("../images/person.png") no-repeat center;
+    width: 2.2rem;
+    height: 3.5rem !important;
+    background-size: 100%;
+}
+
+/*tabs*/
+ion-tabs.tabs-color-active-assertive .tab-item.tab-item-active{
+    background-color: red;
+}
+ion-tabs.tabs-color-active-assertive .tab-item.tab-item-active{
+    color: white;
+}
+.tabs{
+    height: 5.5rem;
+}
+.tabs span{
+    font-size: 1.2rem;
+}
+.tabsView .item-divider{
+    font-weight: 900;
+    line-height: 3.5rem;
+}
+
+/*客服*/
+div #rong-conversation{
+left: 0;
+}
+.rongcloud-kefuBtnBox{
+height: 60px;
+width: 60px;
+border-radius: 50%;
+}
+.rongcloud-recent{
+    display: none;
+}
+
+#rong-widget-minbtn{
+background:url("../images/service1.png") no-repeat  center/100%;
+}
+#rong-widget-minbtn a{
+    display: none;
+}
+.rongcloud-kefuChat #header{
+background: #E60012;
+}

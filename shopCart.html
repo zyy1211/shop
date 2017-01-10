@@ -1,0 +1,27 @@
+<ion-view class="shopCart">
+    <ion-content>
+        <div class="all">
+            <div ng-click="shopCart.choseAll($event)" class="point"></div>
+            <div>全选</div>
+        </div>
+        <!--开始-->
+        <div class="goodsBox">
+
+                <div class="goods" ng-repeat="item in shopCart.data">
+                <div ng-click="shopCart.chose($event)" class="point"></div>
+                <div class="goods-msg">
+                    <img ng-src="{{item.imgsrc}}">
+                    <p>{{item.content}}</p>
+                    <div class="trash">
+                        <span>¥{{item.price}}</span>
+                        <span>×{{item.num}}</span>
+                        <img ng-click="shopCart.remove($event,$index)" ng-src="{{item.src}}">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </ion-content>
+</ion-view>

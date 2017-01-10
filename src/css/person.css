@@ -1,0 +1,151 @@
+/*开头*/
+
+.personView .personBG{
+    background-color: #eee;
+}
+.personView .userDetail{
+    /*border: 1px solid gainsboro;*/
+    height: 10.4rem;
+    width: 100vw;
+    margin-bottom: .1rem;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    background-color: white;
+}
+.personView .userDetail .userName{
+    margin-left: 1rem;
+}
+.personView .userDetail .userName h4{
+    font-weight: 900;
+}
+.personView .userDetail .userName p{
+    color: grey;
+}
+.personView .userDetail img{
+    width: 7.5rem;
+    height: 7.5rem;
+    border: 1px solid gainsboro;
+    margin-left: 1rem;
+}
+
+/*订单和收藏*/
+.personView .column-two{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    height: 7.7rem;
+    border-bottom: 1rem solid #eee;
+    background-color: white;
+}
+.personView .column-first,.personView .column-sec{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.personView .column-first span,.personView .column-sec span{
+    height: 1.4rem;
+    font-size: 1.2rem;
+}
+.personView .column-first img{
+    width: 2rem;
+    height: 2.5rem;
+    margin-bottom: .9rem;
+}
+.personView .column-sec img{
+    width: 2.25rem;
+    height: 2.25rem;
+    margin-bottom: 1rem;
+}
+/*购物车*/
+.personView .shopCart{
+    height: 5.1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+}
+.personView .shopCart>div{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+/*购物车图标*/
+.personView .imageCar{
+    width: 2.15rem;
+    height: 2.1rem;
+    margin: 0 1.5rem 0 1.55rem;
+}
+/*积分.地址.支付*/
+.personView .row-three{
+    height: 15.1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: white;
+}
+.personView .row-three>div{
+    height: 5rem;
+    border-bottom: .1rem solid #eee;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.personView .row-three>div>div{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+/*积分图标*/
+.personView .imageMark{
+    width: 2.2rem;
+    height: 1.9rem;
+    margin: 0 1.5rem 0 1.55rem;
+}
+    /*地址图标*/
+.personView .imageAdd{
+    width: 1.5rem;
+    height: 2.3rem;
+    margin: 0 1.5rem 0 1.55rem;
+}
+    /*支付图标*/
+.personView .imageID{
+    height: 2.1rem;
+    width: 2.4rem;
+    margin: 0 1.5rem 0 1.55rem;
+}
+/*大于号图标*/
+.personView .GT{
+    width: 0.95rem;
+    height: 1.6rem;
+    margin-right: 1.1rem;
+}
+/*关注*/
+.personView .focus{
+    height: 5.1rem;
+    margin-top: 1.65rem;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+}
+.personView .focus>div{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+.personView .focus p{
+    margin: 0 1rem 0 0 ;
+    color: grey;
+}
+.personView .imageHeard{
+    margin: 0 1.5rem 0 1.55rem;
+    height: 1.85rem;
+    width: 2.1rem;
+}
+
